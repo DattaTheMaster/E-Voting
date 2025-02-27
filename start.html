@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Secure E-Voting System</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .h1-link {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .link {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+            margin-right: 24px;
+        }
+        .link:hover {
+            color: #cce5ff;
+        }
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header-buttons button {
+            background-color: navy;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 24px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        .header-buttons button:hover {
+            background-color: lightblue;
+            color: black;   
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            transition: all 0.3s ease-in-out;
+        }
+        .section:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02);
+        }
+        .section img {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+    </style>
+    </head>
+    <body>
+
+        <header>
+            <a href="start.html" class="h1-link">Secure E-Voting System</a>
+            <nav class="nav-links">
+                <a class="link" href="start.html">Home</a>
+                <a class="link" href="working.html">How it works</a>
+                <a class="link" href="register.html">Get Started</a>
+            </nav>
+            <div class="header-buttons">
+                <button
+                    onclick="window.location.href='register.html'">Register</button>
+                <button
+                    onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="section">
+                <h2>Vote Securely from Anywhere</h2>
+                <img src="vote.jpeg" alt="Vote">
+                <p>Using Aadhaar, PAN, and OTP verification, you can cast your
+                    vote safely and conveniently.</p>
+                <a href="register.html" class="button">Register Now</a>
+            </div>
+            <div class="section">
+                <h2>How It Works</h2>
+                <img src="voting.jpeg" alt="Voting">
+                <ul>
+                    <li>Register with Aadhaar, PAN, and mobile OTP.</li>
+                    <li>Secure biometric or facial recognition login.</li>
+                    <li>Cast your vote digitally with blockchain security.</li>
+                </ul>
+                <a href="working.html" class="button">Learn More</a>
+            </div>
+            <div class="section">
+                <h2>Key Features</h2>
+                <p>✔ Blockchain-based tamper-proof voting</p>
+                <p>✔ Multi-factor authentication for security</p>
+                <p>✔ Accessible and transparent electoral process</p>
+                <a href="features.html" class="button">Explore Features</a>
+            </div>
+            <div class="section">
+                <h2>Get Started</h2>
+                <p>Ensure fair and secure elections by voting digitally.</p>
+                <a href="register.html" class="button">Sign Up Now</a>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>State Government Voting</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .candidate {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        .candidate:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02);
+        }
+        .candidate img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .vote-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .vote-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+    </head>
+    <body>
+        <header>State Government Voting</header>
+        <div class="container">
+            <div class="candidate">
+                <img src="s1.jpg" alt="Candidate 1">
+                <h3>Candidate 1</h3>
+                <p>Party: ABC Party</p>
+                <button class="vote-btn"
+                    onclick="castStateVote('Candidate 1')">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="s2.jpg" alt="Candidate 2">
+                <h3>Candidate 2</h3>
+                <p>Party: XYZ Party</p>
+                <button class="vote-btn"
+                    onclick="castStateVote('Candidate 2')">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="s3.jpg" alt="Candidate 3">
+                <h3>Candidate 3</h3>
+                <p>Party: LMN Party</p>
+                <button class="vote-btn"
+                    onclick="castStateVote('Candidate 3')">Vote</button>
+            </div>
+        </div>
+        <script>
+        function castStateVote(candidateName) {
+            alert(`Voting successfully completed for ${candidateName}!`);
+            window.location.href = "main.html";
+        }
+    </script>
+    </body>
+</html>

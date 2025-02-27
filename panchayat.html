@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panchayat Voting</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .candidate {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        .candidate:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+        .candidate img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .vote-button {
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .vote-button:hover {
+            background-color: #218838;
+        }
+    </style>
+    </head>
+    <body>
+        <header>Panchayat Voting</header>
+        <div class="container">
+            <div class="candidate">
+                <img src="p1.jpg" alt="Candidate 1">
+                <h3>Candidate 1</h3>
+                <p>Party: People's Alliance</p>
+                <p>Experience: 5 years in community service</p>
+                <button onclick="castVote('Candidate Name')"
+                    class="vote-button">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="p2.jpg" alt="Candidate 2">
+                <h3>Candidate 2</h3>
+                <p>Party: Progressive Front</p>
+                <p>Experience: 8 years in governance</p>
+                <button onclick="castVote('Candidate Name')"
+                    class="vote-button">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="p3.jpg" alt="Candidate 3">
+                <h3>Candidate 3</h3>
+                <p>Party: United Community</p>
+                <p>Experience: 6 years in public service</p>
+                <button onclick="castVote('Candidate Name')"
+                    class="vote-button">Vote</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        function castVote(candidateName) {
+    alert(`Voting successfully completed for ${candidateName}!`);
+    window.location.href = "main.html";
+}
+    </script>
+</html>

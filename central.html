@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Central Government Voting</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .candidate {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: all 0.3s ease-in-out;
+        }
+        .candidate:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+        .candidate img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .vote-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        .vote-button:hover {
+            background-color: #218838;
+        }
+    </style>
+        <script>
+        function castVote(candidate) {
+            alert("Voting successfully completed for " + candidate);
+            window.location.href = "main.html";
+        }
+    </script>
+    </head>
+    <body>
+        <header>Central Government Voting</header>
+        <div class="container">
+            <div class="candidate">
+                <img src="c1.jpg" alt="Candidate 1">
+                <h3>Candidate 1</h3>
+                <p>Party A</p>
+                <button class="vote-button"
+                    onclick="castVote('Candidate 1')">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="c2.jpg" alt="Candidate 2">
+                <h3>Candidate 2</h3>
+                <p>Party B</p>
+                <button class="vote-button"
+                    onclick="castVote('Candidate 2')">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="c3.jpg" alt="Candidate 3">
+                <h3>Candidate 3</h3>
+                <p>Party C</p>
+                <button class="vote-button"
+                    onclick="castVote('Candidate 3')">Vote</button>
+            </div>
+        </div>
+    </body>
+</html>
